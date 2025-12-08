@@ -25,7 +25,7 @@ public class SampleDataController {
     private static final String[] STATUS = {"ACTIVE", "INACTIVE", "PENDING"};
 
     private static final String[] CONTENT_SAMPLES = {
-            "This item contains detailed operational information including workflow steps, revision logs, related attachments, and internal notes. It is generated as part of the system dataset to illustrate how long text fields behave in real application environments.",
+            "This item contains detailed operational information includingsssss workflow steps, revision logs, related attachments, and internal notes. It is generated as part of the system dataset to illustrate how long text fields behave in real application environments.",
             "The description provides context for the generated object, offering extensive metadata, processing comments, and simulated user-generated content. This helps developers validate pagination, UI rendering, and backend transformation logic.",
             "Here you can find a long-form example text intended to test data handling, formatting, and serialization. This includes simulated descriptions that reflect real-world business objects with multiple attributes and dynamic content.",
             "This sample content demonstrates how larger text bodies are handled within REST responses. It includes realistic wording, mixed formatting patterns, and structured sentences intended to resemble enterprise system documentation.",
