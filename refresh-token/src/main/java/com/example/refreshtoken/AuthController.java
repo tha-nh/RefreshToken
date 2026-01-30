@@ -13,7 +13,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public Map<String,String> login(){
-        String token = jwt.generateToken("user", 60*1000);
+        String token = jwt.generateToken("user", 3*60*1000);
         String refresh = UUID.randomUUID().toString();
         refreshStore.put(refresh, "user");
         return Map.of("token",token,"refreshToken",refresh);
@@ -25,7 +25,7 @@ public class AuthController {
             return Map.of("error","invalid refresh token");
 
         String user = refreshStore.get(refreshToken);
-        String newToken = jwt.generateToken(user, 60*1000);
+        String newToken = jwt.generateToken(user, 3*60*1000);
         return Map.of("token",newToken);
     }
 }
